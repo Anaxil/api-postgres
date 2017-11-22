@@ -1,0 +1,19 @@
+{
+  "development": {
+    "username": "posgres",
+    "password": "Centrum321!",
+    "database": "api-postgres",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Centrum321!",
+    "database": "api-postgres",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "dialect": "postgres"
+  }
+}
