@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "posgres",
+    "username": "postgres",
     "password": "Centrum321!",
     "database": "api-postgres",
     "host": "127.0.0.1",
