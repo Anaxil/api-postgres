@@ -14,4 +14,13 @@ module.exports = (app) => {
 
     app.put('/api/todos/:todoId', todosController.update);
     app.delete('/api/todos/:todoId', todosController.delete);
+
+    app.put('/api/todos/:todoId/items/:todoItemId', todosItemsController.update);
+    app.delete('/api/todos/:todoId/items/:todoItemId', todosItemsController.destroy);
+
+    app.all('/api/todos/:todoId/items', (req,res) => {
+        res.status(405).send({
+            message: 'Metoda nie dozwolona'
+        });
+    });
 }

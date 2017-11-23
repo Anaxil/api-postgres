@@ -91,6 +91,5 @@ module.exports = {
                     .catch(error => res.status(400).send(error.toString()))
             })
             .catch(error => res.status(400).send(error.toString()))
-            .catch(error => res.status(400).send(error.toString()))
     }
 }
